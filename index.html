@@ -1,49 +1,93 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>Adobe XD Presentation</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section>
+					<h1>Herzlich Willkommen!</h1>
+					<aside class="notes">
+						<ul>
+							<li>Warum diese Präsentation?</li>
+							<li>Tolle Starthilfe um Ideen schnell zu visualieren</li>
+							<li>Problemstellungen verdeutlichen</li>
+							<li>Dem Kunden ein Blueprint verfügbar machen, an dem er auch selbst arbeiten kann.</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3 class="fragment" data-fragment-index="2">Das Tool:</h3>
+					<h1 class="fragment grow highlight-blue" data-fragment-index="1">Adobe XD</h1>
+					<ul>
+						<li class="fragment" data-fragment-index="3">Mächtiges UX Design</li>
+						<li class="fragment" data-fragment-index="4">For Free!</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Seit 18. Oktober 2017 erhältlich</li>
+							<li>Zum Prototypen von Webapps, Mobile Apps & Webseiten</li>
+							<li>Kompatibel zu gängigen Adobe Produkten wie Photoshop oder After Effects</li>
+							<li>Sehr simple Bedienung, nur die Kreativität kann dich einschränken!</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<h2>Überblick</h2>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		Reveal.initialize({
+			multiplex: {
+				secret: null,
+				id: 'b5f9f6cb4f612cbc',
+				url: 'localhost:1948'
+			},
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true
+				}
+			]
+		});
+	</script>
+</body>
+
 </html>

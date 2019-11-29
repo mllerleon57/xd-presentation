@@ -51,41 +51,74 @@
 						<ul>
 							<li>Seit 18. Oktober 2017 erhältlich</li>
 							<li>Zum Prototypen von Webapps, Mobile Apps & Webseiten</li>
-							<li>Kompatibel zu gängigen Adobe Produkten wie Photoshop oder After Effects</li>
+							<li>Kompatibel zu gängigen Adobe Produkten wie Photoshop, After Effects oder Illustrator
+							</li>
 							<li>Sehr simple Bedienung, nur die Kreativität kann dich einschränken!</li>
+							<li>Ständige Aktualisierungen</li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section>
-				<h2>Überblick</h2>
+				<section>
+					<h2>Überblick & Features</h2>
+				</section>
+				<section>
+					<h4>Sprachsteuerung und Sprachplayback</h4>
+					<video class="fragment" data-fragment-index="1" controls muted id="speechVideo">
+						<source src="media/speech.mp4" type="video/mp4" />
+					</video>
+					<aside class="notes">
+						<ul>
+							<li>Beispielsweise Apps für Amazon Alexa, Google Assistant oder auch Siri</li>
+							<li>Sprachein- sowie ausgabe ist möglich</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Plugins & UI Kits</h4>
+					<img class="fragment" data-fragment-index="1" src="media/plugins.png" />
+					<aside class="notes">
+						<ul>
+							<li>Plugins zum Einbinden von Beispielbildern sowie für Dynamische Inhalte</li>
+							<li>Anbindung MS Teams</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Animationen</h4>
+					<video class="fragment" data-fragment-index="1" controls muted id="animVideo">
+						<source src="media/animate.mp4" type="video/mp4" />
+					</video>
+					<aside class="notes">
+						<ul>
+							<li>Verschiedene Animationsmodi</li>
+							<li>Autoanimation, einfache Animationen, Drag & Drop</li>
+							<li>Ereigniss oder Zeitgesteuert</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h4>Community</h4>
+					<h4 class="fragment grow" data-fragment-index="1" style="color: #e94f35">#MadeWithAdobeXD</h4>
+					<img class="fragment" data-fragment-index="1" src="media/twitter.png" />
+					<aside class="notes">
+						<ul>
+							<li>Stark wachsende Community</li>
+							<li>Twitter, Instagram etc.</li>
+							<li>Einfach mal nach Hashtag suchen um sich Anregungen zu beschaffen</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section>
+				<h1 class="fragment grow highlight-inwerken">Was noch?</h1>
 			</section>
 		</div>
 	</div>
-
 	<script src="js/reveal.js"></script>
-
-	<script>
-		Reveal.initialize({
-			transitionSpeed: 'fast',
-			controls: false,
-			keyboard: false,
-			multiplex: {
-				secret: null,
-				id: 'e2ae9895ff6e887c',
-				url: 'http://localhost:1948'
-			},
-			dependencies: [
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/zoom-js/zoom.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true },
-				{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js', async: true },
-				{ src: 'plugin/multiplex/client.js', async: true }
-			]
-		});
-	</script>
+	<script src="js/app.js"></script>
+	<script src="js/client.js"></script>
 </body>
 
 </html>

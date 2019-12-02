@@ -1,4 +1,6 @@
 Reveal.initialize({
+    keyboard: false,
+    arrows: false,
     autoPlayMedia: true,
     multiplex: {
         secret: null,

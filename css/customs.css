@@ -1,3 +1,11 @@
 .reveal .slides section .fragment.highlight-inwerken.visible {
     color: #e94f35;
 }
+
+body:after {
+    content: url(../media/inw_logo.png);
+    position: fixed;
+    bottom: 1.5em;
+    left: 1.5em;
+    /* box-shadow: 5px 5px 10px #000; */
+}

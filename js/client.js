@@ -1,7 +1,10 @@
 Reveal.initialize({
     keyboard: false,
-    arrows: false,
     autoPlayMedia: true,
+    hideCursorTime: 1000,
+    overview: false,
+    history: true,
+    controls: false,
     multiplex: {
         secret: null,
         id: 'f52c943519b0af01',
